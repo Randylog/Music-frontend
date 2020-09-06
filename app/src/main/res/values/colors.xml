@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f57123</color>
+<!--    <color name="colorPrimary">#008577</color>-->
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- define color -->
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteTransparent">#80ffffff</color>
+    <color name="colorTransparent">#00555555</color>
+    <color name="colorThemeColor">#f57123</color>
+    <color name="defaultColor">#969595</color>
+    <color name="textColor">#333333</color>
+    <color name="linkColor">#ff6b00</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLogin">#00233f</color>
+    <color name="colorFacebook">#4267b2</color>
+    <color name="colorGoogle">#4285f4</color>
+    <color name="colorHeader_message">#ff5a35</color>
+
+    <color name="color_primary_text">#1a162c</color>
+    <color name="color_secondary_text">#bac0d3</color>
+    <color name="color_third_text">#393648</color>
+    <color name="white">#FFF</color>
+    <color name="color_fourd_text">#ffa689</color>
+
+    <color name="theme_color">#ffb902</color>
+    <color name="card_color">#f4621d</color>
+</resources>

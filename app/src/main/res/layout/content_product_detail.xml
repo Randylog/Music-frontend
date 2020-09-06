@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.InstituteDetailActivity"
+    tools:showIn="@layout/activity_product_detail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <TextView
+                    android:id="@+id/tvaccdis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="76dp"
+                    android:text="TextView"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit consectetuer adipiscing amet, consectetuer adipiscing elit"
+                    android:textSize="20dp"
+                    android:id="@+id/title"
+                    android:textColor="@color/color_third_text"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cost"
+                        android:text="Rs. $2000"
+                        android:paddingBottom="6dp"
+                        android:textColor="@color/colorThemeColor"
+                        android:textSize="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/txtPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="location"
+                        android:textColor="@color/colorThemeColor"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/desc"
+                    android:text="@string/demoLongStr"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="5dp"
+                android:background="#EFEFEF"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:id="@+id/ind"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="17dp"
+                    android:textColor="#333"
+                    android:paddingTop="20dp"
+                    android:text="Welcome User"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:paddingRight="30dp"
+                    android:paddingLeft="30dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="17dp"
+                    android:textColor="#333"
+                    android:paddingBottom="10dp"
+                    android:text="Are you intrested for reservation?"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/show"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/auth_button"
+                        android:padding="14dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        android:text="Yes, I am interested"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="13dp" />
+
+                    <Button
+                        android:id="@+id/pinned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/auth_button"
+                        android:padding="14dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center"
+                        android:text="Mark as favourite"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="13dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="25dp"
+                android:padding="7dp"
+                android:id="@+id/booknowLY"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Confirmation Reservation"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Add Date "
+                            android:textSize="13dp"
+                            android:inputType="date"
+                            android:background="@drawable/auth_edit"
+                            android:padding="14dp"
+                            android:layout_marginBottom="7dp"
+                            android:id="@+id/date"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Add Time"
+                            android:textSize="13dp"
+                            android:inputType="time"
+                            android:background="@drawable/auth_edit"
+                            android:padding="14dp"
+                            android:layout_marginBottom="7dp"
+                            android:id="@+id/times"/>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Phone number"
+                            android:textSize="13dp"
+                            android:inputType="number"
+                            android:layout_marginBottom="7dp"
+                            android:background="@drawable/auth_edit"
+                            android:padding="14dp"
+                            android:id="@+id/phone"/>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/booknow"
+                    android:background="@drawable/auth_button"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Book Now"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

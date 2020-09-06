@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@drawable/layoutui"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="30dp"
+                        android:paddingBottom="30dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome User,"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:paddingBottom="4dp"
+                            android:textColor="#fff"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Explore more institute now"
+                            android:textSize="20dp"
+                            android:textAlignment="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="#fff"/>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/search_background_home"
+                            android:drawableLeft="@drawable/ic_baseline_search"
+                            android:paddingLeft="20dp"
+                            android:text="Search Institute here"
+                            android:textAllCaps="false"
+                            android:visibility="gone"
+                            android:drawablePadding="20dp"
+                            android:textAlignment="viewStart"
+                            android:textColor="#434343"
+                            android:fontFamily="sans-serif"
+                            android:textSize="15dp"
+                            android:layout_marginTop="20dp"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginBottom="35dp"
+                        android:layout_margin="7dp">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/pager"
+                            android:layout_marginTop="30dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_alignParentTop="true" />
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/indicator"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                    <!-- Restaurant Panel-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:text="Recommend Institute"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/textColor"
+                        android:layout_margin="7dp"
+                        android:paddingTop="20dp"
+                        android:textSize="18dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_margin="5dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <!-- nearby institute-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_weight="1"
+                        android:text="Explore More"
+                        android:paddingTop="20dp"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/textColor"
+                        android:layout_margin="7dp"
+                        android:textSize="18dp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_nearby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_margin="5dp"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
