@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 //using baseurl to run in android app, adding tokens
 public class BaseUrl {
-    public static final String base_url="http://10.0.2.2:5000/";
+    public static final String base_url="http://192.168.1.33:5000/";
     public static String token = "Bearer ";
     public static Retrofit getInstance() {
         Retrofit retrofit = new Retrofit.Builder()
